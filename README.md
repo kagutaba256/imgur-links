@@ -18,5 +18,5 @@ python imgur-soup.py <album url> <path to file for links>
 
 for instance
 ```console
-python imgur-soup.py http://imgur.com/a/8ZaYF links.txt
+python imgur-soup.py https://imgur.com/gallery/wast9Az links.txt
 ```
