@@ -20,7 +20,8 @@ stuff = json.loads(postDataJSON)
 
 urls = []
 for image in stuff['media']:
-    link = image['url']
+    #link = image['url']
+    link = f"<p> <img src='{image['url']}' width= 500> </p>"
     urls.append(link)
     print(link)
 
