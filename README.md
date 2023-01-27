@@ -13,10 +13,10 @@ pip install beautifulsoup4 requests --user
 then run the script with the album url and the path to the file you want to save the links to
 
 ```console
-python imgur.py <album url> <path to file for links>
+python imgur-soup.py <album url> <path to file for links>
 ```
 
 for instance
 ```console
-python imgur.py http://imgur.com/a/8ZaYF links.txt
+python imgur-soup.py https://imgur.com/gallery/wast9Az links.txt
 ```
