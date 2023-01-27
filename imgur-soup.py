@@ -15,8 +15,7 @@ soup = BeautifulSoup(res.text, 'html.parser')
 
 # output is in test.html
 # we need to get the json from the <script>window.postDataJSON objct
-postDataJSON = (soup.find('script', text=lambda t: t.startswith('window.postDataJSON')).text).split('=')[1]
-postDataJSON = json.loads(postDataJSON)
+postDataJSON = eval((soup.find('script', text=lambda t: t.startswith('window.postDataJSON')).text).split('=')[1])
 stuff = json.loads(postDataJSON)
 
 urls = []
