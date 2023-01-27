@@ -13,8 +13,6 @@ file = sys.argv[2]
 res = requests.get(album)
 soup = BeautifulSoup(res.text, 'html.parser')
 
-# output is in test.html
-# we need to get the json from the <script>window.postDataJSON objct
 postDataJSON = eval((soup.find('script', text=lambda t: t.startswith('window.postDataJSON')).text).split('=')[1])
 stuff = json.loads(postDataJSON)
 
